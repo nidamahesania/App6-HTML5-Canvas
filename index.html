@@ -87,8 +87,11 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		var a_context = a_canvas.getContext("2d"); //prints the image in 2d 
 		var img = new Image(); //creates a variable "img" that is set equal to the new variable for image
 		img.src = "
-	
-	
+		img.onload = function() {//loads the image onto canvas 
+				a_context.drawImage(img, 200,5,70,70); //determines where the image will be placed on the canvas(x,y,width, height) 
+				};
+	}
+	</script> 
 	
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
