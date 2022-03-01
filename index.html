@@ -86,13 +86,22 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 		var a_canvas = document.getElementById("myCanvas"); //calls the canvas
 		var a_context = a_canvas.getContext("2d"); //prints the image in 2d 
 		var img = new Image(); //creates a variable "img" that is set equal to the new variable for image
-		img.src = 
+		img.src = "ic.jpg"
 		img.onload = function() {//loads the image onto canvas 
 				a_context.drawImage(img, 200,5,70,70); //determines where the image will be placed on the canvas(x,y,width, height) 
 				};
-	}
 	</script> 
 	
+	<script> 
+	function clear_canvas(){ //function that clears the canvas 
+		var a_canvas = document.getElementById("myCanvas"); //calls the canvas
+		a_canvas.width = a_canvas.width; //clears everything within the box 
+		) 
+		
+	</script> 
+	
+		
+		
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>App6---HTML5-Canvas</h1>
